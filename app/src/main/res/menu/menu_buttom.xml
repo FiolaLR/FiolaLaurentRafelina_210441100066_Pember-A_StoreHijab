@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homee"
+        android:icon="@drawable/home_24"
+        android:title=" "/>
+
+    <item
+        android:id="@+id/bag"
+        android:icon="@drawable/shoppingbag_24"
+        android:title=" "/>
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/person_24"
+        android:title=" "/>
+</menu>

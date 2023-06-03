@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+    <TextView
+        android:id="@+id/tvaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:text="Account"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/account"
+        android:layout_width="65dp"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:src="@drawable/person_24"
+        app:layout_constraintStart_toStartOf="@+id/tvaccount"
+        app:layout_constraintTop_toBottomOf="@+id/tvaccount" />
+
+    <TextView
+        android:id="@+id/tvnameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:text="Name user"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/account"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Personnal Info"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tvnameuser"
+        app:layout_constraintTop_toBottomOf="@+id/tvnameuser" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="65dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#FADCD9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="100dp"
+        android:text="Pesan disini"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/help"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button4"
+        android:layout_width="65dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#FADCD9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
+
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="65dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/baseline_help_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
